@@ -4,42 +4,49 @@
 
 html, body {
     margin: 0;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 .main-container {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-image: linear-gradient(#a7cbe9, #e0e0e0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-container {
-    background-color: #566666;
-    max-width: 700px;
-    min-width: 250px;
+    
+    background-image: linear-gradient(to right, #10263f, #607D8B);
+    width: 600px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 25px;
     border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.form {
+.input-group {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    margin: 0;
+    margin-bottom: 16px;
+    color: #00a2ff;
+    font-weight: 900;
 }
 
 input {
     display: block;
-    width: 650px;
+    width: 550px;
     padding: 10px;
     border-radius: 6px;
     border: none;
+    display: flex;
 }
 
 button {
@@ -49,17 +56,23 @@ button {
     margin-bottom: 0;
     font-size: 1.5rem;
     border-radius: 10px;
-    border: none;
-}
-
-.input-group {
-    margin: 0;
-    margin-bottom: 16px;
+    border: 1px solid #00a2ff;
+    background: transparent;
+    color: white;
 }
 
 h1 {
     margin-bottom: 10px;
     font-size: 3rem;
     margin-top: 0;
+    color: #00a2ff;
+    font-weight: 900;
 }
+
+.input-group input {
+    border: 1px solid black;
+    background: #b8b8b8;
+}
+
+
 
