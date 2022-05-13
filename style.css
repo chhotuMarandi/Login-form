@@ -10,7 +10,7 @@ html, body {
 .main-container {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(#a7cbe9, #e0e0e0);
+    background-color: #f4f4f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,9 +18,9 @@ html, body {
 
 .login-container {
     
-    background-image: linear-gradient(to right, #10263f, #607D8B);
-    width: 600px;
-    height: 400px;
+    background-color: #ffffff;
+    width: 400px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,11 +42,11 @@ html, body {
 
 input {
     display: block;
-    width: 550px;
-    padding: 10px;
+    width: 360px;
+    padding: 1rem;
     border-radius: 6px;
     border: none;
-    display: flex;
+    font-size: 1rem;
 }
 
 button {
@@ -56,23 +56,24 @@ button {
     margin-bottom: 0;
     font-size: 1.5rem;
     border-radius: 10px;
-    border: 1px solid #00a2ff;
-    background: transparent;
-    color: white;
+    background: #0f83ff;
+    border: none;
+    color: #ffffff;
 }
 
-h1 {
+/* h1 {
     margin-bottom: 10px;
     font-size: 3rem;
     margin-top: 0;
     color: #00a2ff;
     font-weight: 900;
-}
+} */
 
 .input-group input {
-    border: 1px solid black;
-    background: #b8b8b8;
+    border: 1.5px solid rgb(218, 218, 218);
+    /* background: #b8b8b8; */
 }
+
 
 
 
