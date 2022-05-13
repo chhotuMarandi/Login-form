@@ -19,15 +19,15 @@ html, body {
 .login-container {
     
     background-color: #ffffff;
-    width: 400px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 25px;
     border-radius: 8px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .input-group {
@@ -42,7 +42,7 @@ html, body {
 
 input {
     display: block;
-    width: 360px;
+    width: 340px;
     padding: 1rem;
     border-radius: 6px;
     border: none;
@@ -51,14 +51,20 @@ input {
 
 button {
     width: 100%;
-    margin-top: 16px;
-    padding: 10px;
-    margin-bottom: 0;
+    /* margin-top: 16px; */
+    padding: 12px 0px;
+    /* margin-bottom: 0; */
     font-size: 1.5rem;
     border-radius: 10px;
     background: #0f83ff;
     border: none;
     color: #ffffff;
+}
+
+h3 {
+    padding: 20px;
+    margin-top: 0;
+    font-weight: 600;
 }
 
 /* h1 {
@@ -72,6 +78,22 @@ button {
 .input-group input {
     border: 1.5px solid rgb(218, 218, 218);
     /* background: #b8b8b8; */
+}
+
+.ul-list {
+    display: flex;
+    gap: 16px;
+    padding: 10px 10px;
+    list-style-type: none;
+    color: #0f83ff;
+    
+}
+
+.ul-list a {
+    text-decoration: none;
+    color: #0f83ff;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
