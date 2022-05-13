@@ -9,7 +9,7 @@ html, body {
 
 .main-container {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ h3 {
     text-decoration: none;
     color: #0f83ff;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .logo {
