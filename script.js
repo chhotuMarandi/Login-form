@@ -8,13 +8,14 @@ const loginBtn = document.querySelector(".login-button");
 
 loginBtn.addEventListener("click", function() {
     event.preventDefault();
-    console.log("hello");
+    checkForm();
 })
 
 //Functions
 
 function checkForm() {
-    if(emailInput==="" && passInput==="") {
-        console.log("please fill the email and password");
+    if(emailInput.value =="" || passInput.value =="") {
+        alert("please fill the email and password");
     }
 }
+
