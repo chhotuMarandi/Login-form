@@ -11,6 +11,8 @@ const form = document.getElementById("form");
 loginBtn.addEventListener("click", function() {
     event.preventDefault();
     checkForm();
+    emailInput.value ="";
+    passInput.value ="";
     
 })
 
