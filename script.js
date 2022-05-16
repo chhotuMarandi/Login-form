@@ -17,7 +17,6 @@ loginBtn.addEventListener("click", function() {
 //Functions
 
 function checkForm() {
-    let messages = [];
     if(emailInput.value =="" || passInput.value =="") {
        alert("Please fill up Email & Password");
     }
