@@ -19,13 +19,16 @@ loginBtn.addEventListener("click", function() {
 function checkForm() {
     let messages = [];
     if(emailInput.value =="" || passInput.value =="") {
-       alert("Please Fill Email & Password");
+       alert("Please fill up Email & Password");
     }
-    if(emailInput.value.length < 8 || passInput.value.length < 8) {
-        alert("Password must be 8 Characters");
-        emailInput.value ="";
-        passInput.value ="";
+    if(!passInput.value =="") {
+        if(passInput.value.length < 8) {
+            alert("Password must be 8 Characters");
+            emailInput.value ="";
+            passInput.value ="";
+        }
     }   
+    
 }
 
 function emailValidation(){
