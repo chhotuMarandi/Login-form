@@ -31,8 +31,8 @@ function checkForm() {
 }
 
 function emailValidation(){
-    const emailFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if(emailInput.value.match(emailFormat)){
+    const emailFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;   //check email 
+    if(emailInput.value.match(emailFormat)){           //validation parameter//
         form.classList.add("valid");
         form.classList.remove("invalid") ;
         errorMsg.innerHTML = "Your Email Address is Valid.";
