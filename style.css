@@ -97,4 +97,15 @@ h3 {
     width: 200px;
 }
 
+.error {
+    font-size: 15px;
+    color: red;
+    background-color: rgb(253, 220, 220);
+    text-align: center;
+    padding: 3px;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: none;
+}
+
 
