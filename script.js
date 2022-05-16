@@ -3,13 +3,15 @@
 const emailInput = document.querySelector(".email-input");
 const passInput = document.querySelector(".pass-input");
 const loginBtn = document.querySelector(".login-button");
-let errorElement = document.querySelector(".error"); 
+const errorMsg = document.getElementById("text");
+const form = document.getElementById("form");
 
 //Event Listeners
 
 loginBtn.addEventListener("click", function() {
     event.preventDefault();
     checkForm();
+    
 })
 
 //Functions
@@ -26,3 +28,24 @@ function checkForm() {
     }   
 }
 
+function emailValidation(){
+    const emailFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if(emailInput.value.match(emailFormat)){
+        form.classList.add("valid");
+        form.classList.remove("invalid") ;
+        errorMsg.innerHTML = "Your Email Address is Valid.";
+        errorMsg.style.color = "#00ff00";
+    }
+    else{
+        form.classList.remove("valid");
+        form.classList.add("invalid");
+        errorMsg.innerHTML = "Please Enter Valid Email Address";
+        errorMsg.style.color = "#ff0000";
+    }
+    if(emailInput.value ==""){
+        form.classList.remove("valid");
+        form.classList.remove("invalid") ;
+        errorMsg.innerHTML = "";
+        errorMsg.style.color = "#00ff00";
+    }
+}
